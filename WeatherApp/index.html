@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherApp</title>
+    <link rel="stylesheet" href="/WeatherApp/index.css">
+</head>
+<body>
+    <h1>Weather App</h1>
+    <div class="weatherContainer">
+      <img class="weatherIcon" id="weatherIcon" src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Cloud-icon.svg" alt="Weather Icon">
+      <div class="weatherData" id="location"></div>
+      <div class="weatherData" id="temperature"></div>
+      <div class="weatherData" id="description"></div>
+    </div>
+    <label for="search" id="label">Write your town </label>
+    <br>
+    <input type="text" id="search" placeholder="Write Here...">
+    <br>
+    <button id="btn" onclick="getWeather()">Search</button>
+  
+    <script src="/WeatherApp/index.js"></script>
+</body>
+</html>

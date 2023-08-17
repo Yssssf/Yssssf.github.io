@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+    body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+    .w3-row-padding img {margin-bottom: 12px}
+    /* Set the width of the sidebar to 120px */
+    .w3-sidebar {width: 120px;background: #222;}
+    /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+    #main {margin-left: 120px}
+    /* Remove margins from "page content" on small screens */
+    @media only screen and (max-width: 600px) {#main { margin-left: 0; align-items: center}}
+    </style>
+  </head>
+<body class="w3-black">
+
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+  <!-- Avatar image in top left corner -->
+  <img src="2023-07-12_15.11.jpeg" style="width:100%">
+  <a href="#main" class="w3-bar-item w3-button w3-padding-large w3-black">
+    <i class="fa fa-home w3-xxlarge"></i>
+    <p>HOME</p>
+  </a>
+  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-user w3-xxlarge"></i>
+    <p>ABOUT</p>
+  </a>
+  <a href="#portfolio" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-eye w3-xxlarge"></i>
+    <p>PORTFOLIO</p>
+  </a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-envelope w3-xxlarge"></i>
+    <p>CONTACT</p>
+  </a>
+</nav>
+
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="#main" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
+    <a href="#portfolio" class="w3-bar-item w3-button" style="width:25% !important">PORTFOLIO</a>
+    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
+  </div>
+</div>
+
+<!-- Page Content -->
+<div class="w3-padding-large" id="main">
+  <!-- Header/Home -->
+  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+    <h1 class="w3-jumbo"><span class="w3-hide-small">I'm</span> Yousef Yaghoubi</h1>
+    <p>Junior Software Developer.</p>
+    <img src="2023-07-12_15.11.jpeg" style="box-shadow: -5px 5px 10px 10px ;" alt="boy" class="w3-image w3-circle" width="992" height="800">
+  </header>
+
+  <!-- About Section -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+    <h2 class="w3-text-light-grey">About Me</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <p style="font-size:20px">Completed third year in Electrical Engineering at Imam Khomeini International University, Qazvin, Iran. Learnt about Electromagnetic fields and System design. 
+    <br>
+    <br>
+      Currently enrolled in a Digital Skills Bootcamp at Just IT Training. Aiming to improve my skills further and grasp a better understanding of software languages (HTML, JavaScript, MySQL and Python). Working on my portfolio to create some personal projects. 
+    <br>
+    <br>
+      Would like to work as a Junior Developer to gain more skills and experience. I thrive working in a challenging environment to push my skills and limit.
+    <br>
+      I am so intresting to Maching learing as well trying to create some application with it.
+
+  </p>
+    <h3 class="w3-padding-16 w3-text-light-grey">My Skills</h3>
+    <p class="w3-wide">Software Development Skills<br>(Python and MySQL)</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:95%"></div>
+    </div>
+    <p class="w3-wide">Web Design<br>(HTML5, CSS3 & JavaScript)</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:80%"></div>
+    </div><br>
+    
+    <a style="text-decoration: none" target="_blank" href="https://www.dropbox.com/scl/fi/ldrnp3mqmx125f8d85hvo/Yousef-Yaghoubi-CV.docx?rlkey=7rhdy5459sijfdfz0csm7tzkt&dl=0" >
+    <button  class="fa fa-download w3-button w3-light-grey w3-padding-large w3-section"> Download Resume</button></a> 
+    
+    <!-- My Reputation -->
+    <h3 class="w3-padding-24 w3-text-light-grey">My Reputation</h3>  
+    <a href="https://github.com/Yssssf" target="_blank" ><img src="/github-mark.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px"></a>
+    <p><span class="w3-large w3-margin-right">Git Hub</span> My repositories</p>
+    <span style='font-size:40px;'>&#127861;</span><br>
+    
+    <a href="https://www.linkedin.com/in/yousef-yaghoubi-31245a27a/" target="_blank"><img src="/linkedin.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px"></a>
+    <p><span class="w3-large w3-margin-right">LinkedIn</span>
+  <!-- End About Section -->
+  </div>
+  
+  <!-- Portfolio Section -->
+  <div class="w3-padding-64 w3-content" id="portfolio">
+    <h2 class="w3-text-light-grey">My Applications</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <div class="w3-row w3-cursive  w3-center w3-padding-16 w3-section w3-light-grey w3-round-xxlarge" style="text-shadow:1px 1px 0 #444">
+      
+        <iframe class="w3-round-xxlarge" style="height:500px" src="https://replit.com/@jousephfox/FilmFlix?embed=true"></iframe><br>
+        FilmFlix Application
+      
+    </div>
+    <div class="w3-row w3-cursive  w3-center w3-padding-16 w3-section w3-light-grey w3-round-xxlarge" style="text-shadow:1px 1px 0 #444">
+      
+        <iframe class="w3-round-xxlarge" style="height: 500px" src="https://replit.com/@jousephfox/rock-paper-scissors-game?embed=true"></iframe><br>
+        Rock Paper Scissors Game
+      
+    </div>
+    <div class="w3-row w3-cursive  w3-center w3-padding-16 w3-section w3-light-grey w3-round-xxlarge" style="text-shadow:1px 1px 0 #444">
+    <iframe style="height: 500px;" src="/WeatherApp/index.html" frameborder="0"></iframe><br>Weather App
+    </div>
+  <!-- End Portfolio Section -->
+  </div>
+
+  <!-- Contact Section -->
+  <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+    <h2 class="w3-text-light-grey">Contact Me</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <div class="w3-section">
+      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> SW19, London</p>
+      <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +44 7958 145005</p>
+      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: y.yaghoubi.business@gmail.com</p>
+    </div><br>
+    <p>Let's get in touch. Send me a message:</p>
+
+     <iframe style="height: 600px;" src="https://share-eu1.hsforms.com/1qc8_CS4TQ7yEL_eqbgE1GQ2d5iry" frameborder="0"></iframe>
+<!-- Footer-->
+<footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+ 
+ <p class="w3-small">This website was made Yousef Yaghoubi (ME) and used W3schools Spaces bootsrap.</p>
+ 
+ <!-- End footer -->
+</footer>
+
+<!-- END PAGE CONTENT -->
+</div>
+
+</body>
+</html>
