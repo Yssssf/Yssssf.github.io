@@ -4,8 +4,9 @@ body {
     padding: 0px;
     text-align: center;
     background-repeat: no-repeat;
-    background-image: url('/WeatherApp/images/default.jpg');
+    background-image: url('images/default.jpg');
     background-position: center;
+    min-height: 800px;
   }
 
   h1 {
@@ -20,8 +21,8 @@ body {
     bottom: 10px;
     margin-top: 50px;
     border-style: solid;
-    border-radius: 15%;
-    width: 400px;
+    border-radius: 16%;
+    max-width: 400px;
     box-shadow: 0px 0px 50px 15px red;
     z-index: 1;
     margin-right: auto;
@@ -64,6 +65,6 @@ body {
     }
   #btn:hover{
     background-color: lightpink;
-    border-radius: 50%;
+    border-radius: 30%;
     box-shadow: 0px 0px 20px 8px red;
   }

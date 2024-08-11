@@ -18,19 +18,19 @@ function getWeather() {
 
 
         let backgroundElement = document.getElementsByTagName("body")[0];
-        backgroundElement.style.backgroundImage = `url("/WeatherApp/images/" + ${getBackgroundImage()})`;
+        backgroundElement.style.backgroundImage = `url("images/" + ${getBackgroundImage()})`;
         function getBackgroundImage() {
           if (data.weather[0].main == "Rain") {
-            var weather = 'url("/WeatherApp/images/rain.jpg")';
+            var weather = 'url("images/rain.jpg")';
             console.log('rain')
           } else if (data.weather[0].main == "Clouds") {
-            var weather = 'url("/WeatherApp/images/clouds.jpg")'
+            var weather = 'url("images/clouds.jpg")'
             console.log('clouds')
           } else if (data.weather[0].main == "Clear") {
-            var weather = 'url("/WeatherApp/images/clear.jpg")';
+            var weather = 'url("images/clear.jpg")';
             console.log('clear')
           } else {
-            var weather = 'url("/WeatherApp/images/default.jpg")';
+            var weather = 'url("images/default.jpg")';
           }
           document.body.style.backgroundImage = weather
           return weather;
