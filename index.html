@@ -1,29 +1,31 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Portfolio</title>
+    <title>Yousef Yaghoubi | Full‑Stack Developer</title>
     <link rel="icon" type="image/x-icon" href="Logo.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Yousef Yaghoubi — Full‑stack developer in London. Python, React, AWS, AI, data, and DevOps.">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
-    body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
-    .w3-row-padding img {margin-bottom: 12px}
-    /* Set the width of the sidebar to 120px */
-    .w3-sidebar {width: 120px;background: #222;}
-    /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
-    #main {margin-left: 120px}
-    /* Remove margins from "page content" on small screens */
-    @media only screen and (max-width: 600px) {#main { margin-left: 0; align-items: center}}
+      body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+      .w3-row-padding img {margin-bottom: 12px}
+      .w3-sidebar {width: 120px; background: #222;}
+      #main {margin-left: 120px}
+      @media only screen and (max-width: 600px) {#main { margin-left: 0; align-items: center}}
+
+      /* Simple tag list for skills */
+      .tags {display:flex; flex-wrap:wrap; gap:.5rem; margin: .5rem 0 1rem;}
+      .tag {background:#333; color:#eee; padding:.25rem .5rem; border-radius:999px; font-size:.85rem; white-space:nowrap;}
+      .w3-section-card {text-shadow:1px 1px 0 #444;}
     </style>
   </head>
 <body class="w3-black">
 
 <!-- Icon Bar (Sidebar - hidden on small screens) -->
 <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
-  <!-- Avatar image in top left corner -->
   <img src="Logo.png" alt="Icon" style="width:100%">
   <a href="#main" class="w3-bar-item w3-button w3-padding-large w3-black">
     <i class="fa fa-home w3-xxlarge"></i>
@@ -33,9 +35,17 @@
     <i class="fa fa-user w3-xxlarge"></i>
     <p>ABOUT</p>
   </a>
+  <a href="#experience" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-briefcase w3-xxlarge"></i>
+    <p>EXPERIENCE</p>
+  </a>
   <a href="#portfolio" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
     <i class="fa fa-eye w3-xxlarge"></i>
     <p>PORTFOLIO</p>
+  </a>
+  <a href="#education" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-graduation-cap w3-xxlarge"></i>
+    <p>EDUCATION</p>
   </a>
   <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
     <i class="fa fa-envelope w3-xxlarge"></i>
@@ -43,13 +53,14 @@
   </a>
 </nav>
 
-<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<!-- Navbar on small screens -->
 <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
   <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
-    <a href="#main" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
-    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
-    <a href="#portfolio" class="w3-bar-item w3-button" style="width:25% !important">PORTFOLIO</a>
-    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
+    <a href="#main" class="w3-bar-item w3-button" style="width:20% !important">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button" style="width:20% !important">ABOUT</a>
+    <a href="#experience" class="w3-bar-item w3-button" style="width:20% !important">EXP</a>
+    <a href="#portfolio" class="w3-bar-item w3-button" style="width:20% !important">WORK</a>
+    <a href="#contact" class="w3-bar-item w3-button" style="width:20% !important">CONTACT</a>
   </div>
 </div>
 
@@ -58,94 +69,138 @@
   <!-- Header/Home -->
   <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
     <h1 class="w3-jumbo" style="line-height: 0.9;"><span class="w3-hide-small">I'm</span> Yousef Yaghoubi</h1>
-    <p>Software Developer</p>
-    <img src="IMG_1201.jpg" style="filter: grayscale(100%); box-shadow: -5px 5px 10px 10px; height: auto; width: 600px;" alt="boy" class="w3-image w3-circle" width="992" height="800">
+    <p>Full‑Stack Developer</p>
+    <img src="IMG_1201.jpg" style="filter: grayscale(100%); box-shadow: -5px 5px 10px 10px; height: auto; width: 600px;" alt="portrait" class="w3-image w3-circle" width="992" height="800">
   </header>
 
   <!-- About Section -->
   <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
-    <h2 class="w3-text-light-grey">About Me</h2>
+    <h2 class="w3-text-light-grey">Professional Summary</h2>
     <hr style="width:200px" class="w3-opacity">
-    <p style="font-size:20px">I am a software developer with a strong interest in web development and Python programming. My current focus is on acquiring skills in website and application development while building a foundational understanding of machine learning principles.
-    <br>
-    <br>
-    I actively engage with a range of libraries and tools to create projects that address practical, real-world problems.
-    <br>
-    <br>
-    I am dedicated to continuous learning and skill development in programming, problem-solving, and emerging technologies.
-    <br>
-  </p>
-    
-  <h3 class="w3-padding-16 w3-text-light-grey">My Skills</h3>
-    <p class="w3-wide">Software Development Skills<br>(Python and MySQL)</p>
-    <div class="w3-white">
-    <div class="w3-dark-grey" style="height:28px;width:95%"></div>
-    </div>
-      <p class="w3-wide">Web Design<br>(HTML5, CSS3 & JavaScript)</p>
-      <div class="w3-white">
-      <div class="w3-dark-grey" style="height:28px;width:80%"></div>
-      </div>
-        <p class="w3-wide">Cloud Comouting<br>(AWS Cloud)</p>
-        <div class="w3-white">
-        <div class="w3-dark-grey" style="height:28px;width:50%"></div>
-        </div>
-          <p class="w3-wide">WordPress</p>
-          <div class="w3-white">
-            <div class="w3-dark-grey" style="height:28px;width:80%"></div>
-          </div>
-             <p class="w3-wide">Cyber Secuirty</p>
-             <div class="w3-white">
-               <div class="w3-dark-grey" style="height:28px;width:80%"></div>
-             </div>
-  <br>
-  <!-- My Reputation -->
-  <div>
-    <form style="text-decoration: none" target="_blank" method="get" action="https://www.dropbox.com/scl/fi/gs7lgh2ybb1nf6stk2ivo/Yousef-Yaghoubi-CV.pdf?rlkey=09ikte8h0gokk723zdzqxfj0m&st=3nya36bw&dl=0">  
-    <button  class="fa fa-download w3-button w3-light-grey w3-padding-large w3-section" >Download Resume</button> 
-    </form>
-    
-    <h3 class="w3-padding-24 w3-text-light-grey">My Reputation</h3>  
-    <a href="https://github.com/Yssssf" target="_blank" style="text-decoration: none;"><img src="github-mark.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
-    <p><span class="w3-large w3-margin-right">Github</span></p></a>
-    <br>
-    <br>
-    <a href="https://www.linkedin.com/in/yousef-yaghoubi-31245a27a/" target="_blank" style="text-decoration: none;"><img src="linkedin.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
-    <p><span class="w3-large w3-margin-right">LinkedIn</span></p></a>
+    <p style="font-size:18px">
+      Full‑stack software engineer with 3+ years of experience building scalable web applications and AI‑driven tools in startup environments.
+      I cover architecture, authentication, data analytics, automation, and DevOps.
+      Proficient in AWS cloud services, Python, React, and machine learning.
+      Eligible to work in the UK and available for immediate start.
+    </p>
 
+    <h3 class="w3-padding-16 w3-text-light-grey">Skills</h3>
+
+    <p class="w3-wide">Languages & Frameworks</p>
+    <div class="tags">
+      <span class="tag">JavaScript</span><span class="tag">TypeScript</span><span class="tag">Python</span>
+      <span class="tag">React</span><span class="tag">Node.js</span><span class="tag">Flask</span>
+      <span class="tag">PostgreSQL</span><span class="tag">REST APIs</span><span class="tag">GraphQL</span>
+    </div>
+
+    <p class="w3-wide">Cloud, ML & DevOps</p>
+    <div class="tags">
+      <span class="tag">AWS (Bedrock, Lambda, Cognito, S3, RDS)</span>
+      <span class="tag">Docker</span><span class="tag">CI/CD</span><span class="tag">Git</span>
+      <span class="tag">API integrations</span>
+      <span class="tag">scikit‑learn</span><span class="tag">pandas</span><span class="tag">NumPy</span>
+      <span class="tag">Matplotlib</span><span class="tag">Seaborn</span>
+    </div>
+
+    <div class="w3-row w3-padding-16" aria-hidden="true"></div>
+
+    <h3 class="w3-padding-24 w3-text-light-grey">Profiles</h3>
+    <a href="https://github.com/Yssssf" target="_blank" style="text-decoration: none;">
+      <img src="github-mark.png" alt="GitHub" class="w3-left w3-circle w3-margin-right" style="width:80px">
+      <p><span class="w3-large w3-margin-right">GitHub</span></p>
+    </a>
+    <br><br>
+    <a href="https://www.linkedin.com/in/yousef-yaghoubi-31245a27a/" target="_blank" style="text-decoration: none;">
+      <img src="linkedin.jpg" alt="LinkedIn" class="w3-left w3-circle w3-margin-right" style="width:80px">
+      <p><span class="w3-large w3-margin-right">LinkedIn</span></p>
+    </a>
   </div>
   <!-- End About Section -->
+
+  <!-- Experience Section -->
+  <div class="w3-content w3-text-grey w3-padding-64" id="experience">
+    <h2 class="w3-text-light-grey">Professional Experience</h2>
+    <hr style="width:260px" class="w3-opacity">
+
+    <div class="w3-container w3-padding-16 w3-light-grey w3-round-xxlarge w3-section w3-section-card">
+      <h3 class="w3-text-black" style="margin:0;">Full‑Stack Developer — Freelance</h3>
+      <p class="w3-small">London, United Kingdom • Mar 2025 – Present</p>
+      <ul>
+        <li>Delivered AI‑powered, full‑stack projects integrating AWS Bedrock models with Python backends.</li>
+        <li>Automated workflows via API integrations, reducing manual processes by up to 90%.</li>
+        <li>Provided DevOps support with Dockerised deployments and CI/CD pipelines for small businesses.</li>
+      </ul>
+    </div>
+
+    <div class="w3-container w3-padding-16 w3-light-grey w3-round-xxlarge w3-section w3-section-card">
+      <h3 class="w3-text-black" style="margin:0;">Full‑Stack Developer — ADTECHER.COM</h3>
+      <p class="w3-small">London, United Kingdom • Apr 2024 – Mar 2025</p>
+      <ul>
+        <li>Conducted code reviews before merging changes to the main branch.</li>
+        <li>Developed authenticators and established sign‑in and sign‑up flows.</li>
+        <li>Analysed data to determine optimal manipulation strategies using Python.</li>
+        <li>Designed databases and built data pipelines for efficient information flow.</li>
+      </ul>
+    </div>
+
+    <div class="w3-container w3-padding-16 w3-light-grey w3-round-xxlarge w3-section w3-section-card">
+      <h3 class="w3-text-black" style="margin:0;">Software Engineer — Just IT</h3>
+      <p class="w3-small">London, United Kingdom • Sep 2023 – Feb 2025</p>
+      <ul>
+        <li>Contributed to design, coding, testing, and debugging under senior developers' guidance.</li>
+        <li>Troubleshot and resolved bugs in existing software.</li>
+        <li>Employed Agile methodologies (SCRUM, Kanban, Extreme Programming).</li>
+        <li>Used Git for version control and collaboration.</li>
+        <li>Built a Python application using Flask on AWS Lambda.</li>
+        <li>Configured an RDBMS using SQL queries to support the application.</li>
+      </ul>
+    </div>
+  </div>
+  <!-- End Experience Section -->
 
   <!-- Portfolio Section -->
   <div class="w3-padding-64 w3-content" id="portfolio">
     <h2 class="w3-text-light-grey">My Applications</h2>
-    <h5>(Please click on the link below for each app to be directed to its GitHub repository.)</h5>
+    <h5>(Click each link to view the project.)</h5>
     <hr style="width:200px" class="w3-opacity">
-    <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey w3-round-xxlarge" style="text-shadow:1px 1px 0 #444">
-      
-        <iframe class="w3-round-xxlarge" style="background-color: aliceblue; height:500px; border-style: double;" src="https://s0gb6e0s8b.execute-api.eu-west-2.amazonaws.com/production/?embed=true"></iframe><br>
-        <a href="https://github.com/Yssssf/Movie_App" target="_blank">Movie Organiser</a>
-      
-    </div>
-    <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey w3-round-xxlarge" style="text-shadow:1px 1px 0 #444">
-      
-        <iframe class="w3-round-xxlarge" style="height: 500px" src="https://replit.com/@jousephfox/rock-paper-scissors-game?embed=true"></iframe><br>
-        <a href="https://replit.com/@jousephfox/rock-paper-scissors-game" target="_blank">Rock Paper Scissors Game</a>
-      
+
+    <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey w3-round-xxlarge w3-section-card">
+      <iframe class="w3-round-xxlarge" style="background-color: aliceblue; height:500px; border-style: double;" src="https://s0gb6e0s8b.execute-api.eu-west-2.amazonaws.com/production/?embed=true"></iframe><br>
+      <a href="https://github.com/Yssssf/Movie_App" target="_blank">Movie Organiser</a>
     </div>
 
-    <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey w3-round-xxlarge" style="text-shadow:1px 1px 0 #444">
-      <iframe style="height: 500px; border: 0;" class="w3-round-xxlarge" src="WeatherApp/index.html"></iframe><br><a href="WeatherApp/index.html" target="_blank">Weather App</a>
+    <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey w3-round-xxlarge w3-section-card">
+      <iframe class="w3-round-xxlarge" style="height: 500px" src="https://replit.com/@jousephfox/rock-paper-scissors-game?embed=true"></iframe><br>
+      <a href="https://replit.com/@jousephfox/rock-paper-scissors-game" target="_blank">Rock Paper Scissors Game</a>
     </div>
 
-    <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey w3-round-xxlarge" style="text-shadow:1px 1px 0 #444">
-      <iframe style="height: 500px; width: auto; border: 0;" class="w3-round-xxlarge" src="/IDS.html"></iframe><br><a href="https://github.com/Yssssf/Network-Intrusion-Detection-System-using-Machine-Learning" target="_blank">Network IDS By Machine Learning</a>
+    <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey w3-round-xxlarge w3-section-card">
+      <iframe style="height: 500px; border: 0;" class="w3-round-xxlarge" src="WeatherApp/index.html"></iframe><br>
+      <a href="WeatherApp/index.html" target="_blank">Weather App</a>
     </div>
 
-    <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey w3-round-xxlarge" style="text-shadow:1px 1px 0 #444">
-      <iframe style="height: 500px; width: auto; border: 0;" class="w3-round-xxlarge" src="https://thecave-restaurant.co.uk/"></iframe><br><a href="https://thecave-restaurant.co.uk/" target="_blank">E-commerce for a restaurant(WordPress)</a>
+    <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey w3-round-xxlarge w3-section w3-section-card">
+      <iframe style="height: 500px; width: auto; border: 0;" class="w3-round-xxlarge" src="/IDS.html"></iframe><br>
+      <a href="https://github.com/Yssssf/Network-Intrusion-Detection-System-using-Machine-Learning" target="_blank">Network Intrusion Detection System (ML)</a>
+    </div>
+
+    <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey w3-round-xxlarge w3-section-card">
+      <iframe style="height: 500px; width: auto; border: 0;" class="w3-round-xxlarge" src="https://thecave-restaurant.co.uk/"></iframe><br>
+      <a href="https://thecave-restaurant.co.uk/" target="_blank">The Cave Restaurant Website</a>
     </div>
   </div>
   <!-- End Portfolio Section -->
+
+  <!-- Education Section -->
+  <div class="w3-content w3-text-grey w3-padding-64" id="education">
+    <h2 class="w3-text-light-grey">Education & Professional Development</h2>
+    <hr style="width:360px" class="w3-opacity">
+    <ul>
+      <li>GCSEs (English and Maths) — NESCOT College</li>
+      <li>Electrical Engineering (degree) — Ghazvin International University, Iran</li>
+    </ul>
+  </div>
+  <!-- End Education Section -->
 
   <!-- Contact Section -->
   <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
@@ -153,50 +208,44 @@
     <hr style="width:200px" class="w3-opacity">
 
     <div class="w3-section">
-      
-      <a style="text-decoration: none;" href="https://www.google.com/maps/place/London/" target="_blank"><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i>London, United Kingdom</a>
-    <br>
-    <br>
-      <a style="text-decoration: none;" href="tel:+447958145005" target="_blank"><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone</a>
-    <br>
-    <br>
-      <a style="text-decoration: none;" href="mailto:y.yaghoubi.business@gmail.com" target="_blank"><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Email</a>
+      <a style="text-decoration: none;" href="https://www.google.com/maps/place/London/" target="_blank">
+        <i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i>London, United Kingdom
+      </a>
+      <br><br>
+      <a style="text-decoration: none;" href="tel:+447958145005" target="_blank">
+        <i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> +44 7958 145005
+      </a>
+      <br><br>
+      <a style="text-decoration: none;" href="mailto:y.yaghoubi.business@gmail.com" target="_blank">
+        <i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> y.yaghoubi.business@gmail.com
+      </a>
     </div>
-    
+
     <br>
 
     <p>Let's get in touch. Send me a message:</p>
     <br>
     <iframe
-      
       class="w3-round-xxlarge"
       id="JotFormIFrame-242236287276361"
       title="Simple Contact Form Service"
       onload="window.parent.scrollTo(0,0)"
-      
       allow="geolocation; microphone; camera; fullscreen"
       src="https://form.jotform.com/242236287276361"
-      
       style="min-width:100%; max-width:100%; height:539px; border:none; background-color: transparent; border: 0; overflow:hidden;"
-      
-    >
-    </iframe>
-    <script src='https://cdn.jotfor.ms/s/umd/latest/for-form-embed-handler.js'></script>
+    ></iframe>
+    <script src="https://cdn.jotfor.ms/s/umd/latest/for-form-embed-handler.js"></script>
     <script>window.jotformEmbedHandler("iframe[id='JotFormIFrame-242236287276361']", "https://form.jotform.com/")</script>
-  </div>  
+  </div>
   <!-- End Contact Section -->
 
-<!-- Footer -->
-<footer class="w3-content w3-padding-16 w3-text-grey w3-xlarge">
- 
- <p class="w3-small">This website was made Yousef Yaghoubi (ME) and used W3schools Spaces bootsrap.</p>
- 
-</footer>
- <!-- End Footer -->
-
+  <!-- Footer -->
+  <footer class="w3-content w3-padding-16 w3-text-grey w3-xlarge">
+    <p class="w3-small">This website was built by Yousef Yaghoubi using W3.CSS.</p>
+  </footer>
+  <!-- End Footer -->
 
 </div>
 <!-- END PAGE CONTENT -->
-</div>
 </body>
 </html>
